@@ -1,0 +1,22 @@
+#Esxamen parcial dos
+Dia = input("Dia de la semana ")
+Hora = int(input("Hora actual"))
+Tarea = input("Tipo de tarea")
+if Hora >1 and Hora <= 5:
+  print("Debes estar dormido")
+elif Hora  >5 and Hora  <14 :
+  print("Debes estar en clase")
+elif Hora >14 and Hora  <22:
+  print("Puedes hacer tareas")
+elif Hora  >18 and Hora <22 and Tarea == ("Descanso"):
+  print("Además de tomar una siesta puedes comenzar a realizar tus tareas")
+elif Hora >18 and Hora <22 and Dia == "Sabado" or Dia == "Domingo":
+  print("Puedes ver una película")
+elif Hora >14 and Hora <20 and Dia == "Lunes" or Dia == "Miércoles" or Dia == "Jueves":
+  print("Puedes ir al gimnasio")
+elif Hora >13 and Hora <15 and Dia == "Martes" or Dia == "Jueves":
+  print("Espero estés comiendo algo muy nutritivo")
+else:
+  print("Es invalido")
+  
+  
